@@ -3,8 +3,11 @@ con el git pull
 
 b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
 alfa esta ausente asi que no lo se
+
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+podria si ALFA lo sube con un push y GAMMA despues lo actualiza con un pull
 
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar el fork?
+si otro usuario actualizo en el mismo lugar que vos esto crea un conflicto y se puede perder pero git te avisa para resolverlo 
 
 e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
