@@ -1,3 +1,7 @@
 GAMMA: Angel Barrionuevo
 IP: 74.192.15.201
 Hora: 10:33
+
+Ian Schneider
+IP: 192.168.56.1
+10:47
