@@ -11,3 +11,38 @@ d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quie
 si otro usuario actualizo en el mismo lugar que vos esto crea un conflicto y se puede perder pero git te avisa para resolverlo 
 
 e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
+Perfecto.
+e) Listado de comandos por orden de ejecución:
+
+--- BETA (Ian Schneider) ---
+# Crea el repo en GitHub con fork.txt y README (interfaz web)
+
+--- GAMMA (Angel Barrionuevo) ---
+git clone https://github.com/angelbarrionuevo/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+# Editar fork.txt
+git add fork.txt
+git commit -m "GAMMA: agrega nombre, IP y hora"
+git push origin main
+
+--- ALFA (Gaston Quinteros) ---
+git clone https://github.com/gastonquinteros/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+# Editar fork.txt
+git add fork.txt
+git commit -m "ALFA: agrega nombre, IP y hora"
+git push origin main
+
+--- BETA (Ian Schneider) ---
+git clone https://github.com/ianschneider/TP_SO_i2_Equipo.git
+cd TP_SO_i2_Equipo
+touch NuevoDato.txt
+git add NuevoDato.txt
+git commit -m "BETA: agrega NuevoDato.txt"
+git push origin main
+
+--- GAMMA y ALFA (sincronización con BETA) ---
+git remote add upstream https://github.com/ianschneider/TP_SO_i2_Equipo.git
+git fetch upstream
+git merge upstream/main
+git push origin main
